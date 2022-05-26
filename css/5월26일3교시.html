@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치정하기</title>
+    <style>
+        p{
+            border: 1px solid black;
+            width: 15em;
+            height: 3em;
+        }
+
+
+        #m{
+            overflow: hidden;
+        }
+
+        #t{
+            overflow:scroll
+        }
+
+        div{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            text-align: center;
+            padding-top: 20px;
+            
+        }
+        #relH:hover {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: green;
+            cursor: pointer;
+            
+        }
+        #a:hover {
+            position: relative;
+            right: 20px;
+            bottom: 20px;
+            background-color: yellow;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>T</div>
+    <div id="relH">H</div>
+    <div>A</div>
+    <div>N</div>
+    <div id="a">K</div>
+    <div>S</div>
+
+    <hr>
+    <h3>overflow</h3>
+    <p id="n">overflow에 hidden 값을 적용하면 박스를 넘어가는 내용이 잘려 출력됩니다</p>
+    <p id="m">overflow에 visible 값을 적용하면 콘텐트가 박스를 넘어가셔도 출력됩니다.</p>
+    <p id="t">overflow에 visible 값을 적용하면 콘텐트가 박스를 넘어가셔도 출력됩니다.</p>
+</body>
+</html>
